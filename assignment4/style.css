@@ -1,0 +1,77 @@
+/* GLOBAL STYLES */
+body {
+    font-family: Arial;
+    background-image: url(dashie.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* TEXT ALIGNMENT UTILITIES */
+.textcenter {
+    text-align: center;
+}
+
+.textjustify {
+    text-align: justify;
+}
+
+
+/* NAVIGATION / LINK STYLES */
+.nav-link {
+    color: red;
+}
+
+.nav-link:visited {
+    color: green;
+}
+
+.nav-link:hover {
+    color: yellow;
+}
+
+
+/* HEADINGS (GENERAL) */
+h1, h2, h3, h4, h5, h6 {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+/* PAGE & SECTION HEADINGS */
+.page-title {
+    background-color: navajowhite;
+}
+
+.section-heading {
+    background-color: khaki;
+}
+
+.subsection-heading {
+    background-color: khaki;
+}
+
+.course-name {
+    background-color: khaki;
+}
+
+
+/* MISC / CONTENT SECTIONS */
+.contact-info {
+    background-color: rgb(255, 62, 94);
+}
+
+.technologies {
+    color: rgb(255, 62, 94);
+    background-color: black;
+}
+
+/*IMAGES*/
+.page-image{
+    border: 10px solid black;
+    padding: 5px;
+    background-color: yellow;
+}
+
