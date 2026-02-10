@@ -1,0 +1,42 @@
+/* Text Colors */
+.white { color: white; }
+.blue { color: blue; }
+.blue-text { color: #0000ff; }
+.red-text { color: red; }
+.orange { color: #ffa500; font-weight: bold; }
+.dark-blue-bold { color: #00008b; font-weight: bold; }
+
+/* Background Colors & Spacing */
+#header 
+{
+    background-color: #5c85ff;
+}
+
+.yellow-bg {
+    background-color: yellow;
+}
+
+.green-bg {
+    background-color: green;
+}
+
+.light-green-bg {
+    background-color: #90ee90;
+}
+
+/* Link Requirements */
+.link {
+    color: green;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#ending-paragraph
+{
+    background-color: yellow;
+}
+
