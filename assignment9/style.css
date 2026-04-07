@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #efefef;
+}
+
+.page {
+  width: 1000px;
+  margin: 10px auto;
+  border: 10px solid #222;
+  background: #efefef;
+  padding: 16px 18px 10px 18px;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: start;
+  margin-bottom: 18px;
+}
+
+.logo-area {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.logo {
+  width: 170px;
+  height: auto;
+  display: block;
+}
+
+.logo-text {
+  font-size: 20px;
+  margin: 0;
+  color: #222;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(4, 140px);
+  justify-content: end;
+  gap: 22px;
+  margin-top: 12px;
+}
+
+.nav a {
+  text-decoration: none;
+  background: #b48787;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.hero {
+  background: #d9d9d9;
+  text-align: center;
+  padding: 10px 20px 18px 20px;
+  margin: 0 28px 12px 28px;
+}
+
+.hero h1 {
+  margin: 0 0 22px 0;
+  font-size: 28px;
+  font-weight: normal;
+  color: #111;
+}
+
+.hero-button {
+  display: inline-block;
+  background: #b48787;
+  color: white;
+  text-decoration: none;
+  padding: 10px 26px;
+  font-size: 22px;
+}
+
+.projects-section {
+  background: #d9d9d9;
+  margin: 0 28px 12px 28px;
+  padding: 18px 22px 14px 22px;
+  text-align: center;
+}
+
+.projects-section h2 {
+  margin: 0 0 14px 0;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 42px;
+  align-items: end;
+}
+
+.projects-grid img {
+  width: 100%;
+  max-width: 290px;
+  justify-self: center;
+  display: block;
+}
+
+.about-section {
+  background: #d9d9d9;
+  margin: 0 28px 12px 28px;
+  padding: 14px 22px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.pfp {
+  width: 125px;
+  height: auto;
+  margin-left: 28px;
+  display: block;
+}
+
+.about-grid p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.25;
+  color: #222;
+  max-width: 650px;
+}
+
+.skills-section {
+  background: #d9d9d9;
+  margin: 0 28px 22px 28px;
+  padding: 10px 20px;
+}
+
+.skills-section ul {
+  margin: 0;
+  padding-left: 28px;
+  font-size: 16px;
+  color: #222;
+}
+
+.skills-section li {
+  margin-bottom: 4px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 18px;
+  color: #222;
+  padding: 4px 0 0 0;
+}
