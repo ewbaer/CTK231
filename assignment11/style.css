@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    background: #2b2b2b;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+    background: #eeeeee;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "nav nav"
+        "hero hero"
+        "title title"
+        "about projects"
+        "contact info"
+        "media media"
+        "socials socials"
+        "footer footer";
+    gap: 18px;
+}
+
+.navbar {
+    grid-area: nav;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    background: #ad7f7f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    margin: 0 8px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #946d6d;
+    transform: translateY(-2px);
+}
+
+.hero {
+    grid-area: hero;
+    background: #d3d3d3;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.main-title {
+    grid-area: title;
+    background: #d3d3d3;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.main-title h2 {
+    margin: 0;
+    font-size: 42px;
+}
+
+.card {
+    background: #d3d3d3;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.about {
+    grid-area: about;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.project-box {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.contact-form {
+    grid-area: contact;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    background: #ad7f7f;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #946d6d;
+}
+
+.info {
+    grid-area: info;
+}
+
+.info p {
+    background: #f5f5f5;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.media {
+    grid-area: media;
+    text-align: center;
+}
+
+.media video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.media audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+.socials {
+    grid-area: socials;
+    background: #d3d3d3;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.socials a {
+    background: #f5f5f5;
+    color: #222;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .page {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "hero"
+            "title"
+            "about"
+            "projects"
+            "contact"
+            "info"
+            "media"
+            "socials"
+            "footer";
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px auto;
+        width: 180px;
+    }
+
+    .socials {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .main-title h2 {
+        font-size: 32px;
+    }
+}
