@@ -13,16 +13,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "nav nav"
-        "hero hero"
-        "title title"
-        "about about"
-        "projects projects"
-        "contact info"
-        "media media"
-        "socials socials"
-        "footer footer";
-    gap: 18px;
+        "nav"
+        "hero"
+        "title"
+        "about"
+        "projects"
+        "contact"
+        "info"
+        "socials"
+        "footer";
 }
 
 .navbar {
@@ -195,23 +194,6 @@ body {
     padding: 12px;
     border-radius: 8px;
     margin-bottom: 12px;
-}
-
-.media {
-    grid-area: media;
-    text-align: center;
-}
-
-.media video {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
-
-.media audio {
-    width: 100%;
-    max-width: 500px;
 }
 
 .socials {
