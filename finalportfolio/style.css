@@ -11,21 +11,10 @@ body {
     background: #eeeeee;
     padding: 25px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "nav"
-        "hero"
-        "title"
-        "about"
-        "projects"
-        "contact"
-        "info"
-        "socials"
-        "footer";
+    gap: 18px;
 }
 
 .navbar {
-    grid-area: nav;
     text-align: center;
 }
 
@@ -46,7 +35,6 @@ body {
 }
 
 .hero {
-    grid-area: hero;
     background: #d3d3d3;
     text-align: center;
     padding: 35px 20px;
@@ -65,7 +53,6 @@ body {
 }
 
 .main-title {
-    grid-area: title;
     background: #d3d3d3;
     text-align: center;
     padding: 20px;
@@ -88,29 +75,17 @@ body {
 .card h3 {
     margin-top: 0;
     font-size: 32px;
-}
-
-.about {
-    grid-area: about;
-    padding: 22px 35px;
-}
-
-.about h3 {
     text-align: center;
 }
 
-.about p {
-    max-width: 900px;
-    margin: 0 auto;
+.card p {
     text-align: center;
 }
 
-.projects {
-    grid-area: projects;
-}
-
-.projects h3 {
-    text-align: center;
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
 }
 
 .fancybox-grid {
@@ -144,10 +119,6 @@ body {
 .fancybox-grid p {
     font-weight: 600;
     margin-bottom: 0;
-}
-
-.contact-form {
-    grid-area: contact;
 }
 
 .contact-form form {
@@ -185,10 +156,6 @@ body {
     background: #946d6d;
 }
 
-.info {
-    grid-area: info;
-}
-
 .info p {
     background: #f5f5f5;
     padding: 12px;
@@ -196,8 +163,23 @@ body {
     margin-bottom: 12px;
 }
 
+.media {
+    text-align: center;
+}
+
+.media video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.media audio {
+    width: 100%;
+    max-width: 500px;
+}
+
 .socials {
-    grid-area: socials;
     background: #d3d3d3;
     padding: 20px;
     display: grid;
@@ -223,32 +205,20 @@ body {
 }
 
 .footer {
-    grid-area: footer;
     text-align: center;
     font-size: 16px;
     padding: 10px;
 }
 
 @media (max-width: 800px) {
-    .page {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "nav"
-            "hero"
-            "title"
-            "about"
-            "projects"
-            "contact"
-            "info"
-            "media"
-            "socials"
-            "footer";
-    }
-
     .navbar a {
         display: block;
         margin: 10px auto;
         width: 180px;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
     }
 
     .fancybox-grid {

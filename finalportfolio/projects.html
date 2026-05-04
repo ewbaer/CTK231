@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Baer Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+</head>
+<body>
+    <div class="page">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <section class="main-title">
+            <h2>Projects</h2>
+        </section>
+
+        <section class="card projects">
+            <div class="fancybox-grid">
+                <a href="media/project1.jpg" data-fancybox="projects" data-caption="Snake Game">
+                    <img src="media/project1.jpg" alt="Snake Game">
+                    <p>Snake Game</p>
+                </a>
+
+                <a href="media/project2.jpg" data-fancybox="projects" data-caption="Shopping Website">
+                    <img src="media/project2.jpg" alt="Shopping Website">
+                    <p>Shopping Website</p>
+                </a>
+
+                <a href="media/project3.jpg" data-fancybox="projects" data-caption="Finance Tracker">
+                    <img src="media/project3.jpg" alt="Finance Tracker">
+                    <p>Finance Tracker</p>
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>EthanBaer.com | Portfolio Site</p>
+        </footer>
+    </div>
+
+    <script>
+        Fancybox.bind("[data-fancybox='projects']", {});
+    </script>
+</body>
+</html>
